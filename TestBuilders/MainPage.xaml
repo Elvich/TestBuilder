@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBuilders.MainPage">
+
+    <StackLayout>
+        <ListView x:Name="ListTest" ItemsSource="{Binding Test}" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem
+                                        Text="Удалить"
+                                        BackgroundColor="Red"
+                                        Clicked="DeleteTest"
+                                    />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <Grid Padding="5">
+                                <Frame>
+                                    <Label Text="{Binding Name}"
+                                           VerticalOptions="Center"
+                                           FontSize="Large"
+                                    />
+                                </Frame>
+                            </Grid>
+
+                            </SwipeView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Создать новый тест" BackgroundColor="Transparent" x:Name="NewTest"
+                Clicked="CreateTest"
+        />
+
+    </StackLayout>
+</ContentPage>
+

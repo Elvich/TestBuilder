@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{133D6E4F-236E-4978-97F5-AF775198845F}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestBuilders/CreateTests.xaml.cs">
+    <Files>
+      <File FileName="TestBuilders/CreateTests.xaml" Line="20" Column="42" />
+      <File FileName="TestBuilders/CreateTests.xaml.cs" Line="19" Column="10" />
+      <File FileName="TestBuilders/Platforms/iOS/Program.cs" Line="13" Column="1" />
+      <File FileName="TestBuilders/Question.cs" Line="14" Column="22" />
+      <File FileName="TestBuilders/Test.cs" Line="14" Column="13" />
+      <File FileName="TestBuilders/MainPage.xaml.cs" Line="10" Column="70" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestBuilders" expanded="True">
+            <Node name="TestBuilders" expanded="True">
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True" />
+                <Node name="MacCatalyst" expanded="True" />
+              </Node>
+              <Node name="CreateTests.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.TestBuilders PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C1988CCA-66D0-4096-AA66-D9EE686E81D0" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C1988CCA-66D0-4096-AA66-D9EE686E81D0" />
+</Properties>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBuilders.CreateTests"
+             Title="CreateTests">
+
+    <StackLayout>
+        <Label
+            Padding="25"
+            Text="Создайте/Измените тест"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Grid.Row="1"
+            />
+
+
+            <Editor Placeholder="Текст вопроса" x:Name="TextQuetion" Completed="GetName"/>
+            <Entry Placeholder="Правильный ответ" x:Name="CorrectAnswer" Completed="GetCorrectAnswer"/>
+
+            <ListView x:Name="ListAnswer">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem
+                                            Text="Удалить"
+                                            BackgroundColor="Red"
+                                        />
+                                        <SwipeItem
+                                            Text="Изменить"
+                                            BackgroundColor="LightBlue"
+                                        />
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+
+                                <Grid Padding="5">
+                                    <Label
+                                        Text="{Binding .}"
+                                        VerticalOptions="Center"
+                                    />
+                                </Grid>
+                            </SwipeView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Entry Placeholder="Вариант ответа" x:Name="answer" Completed="AddAnswer"/>
+
+        <HorizontalStackLayout VerticalOptions="End">
+            <Button Text="Закончить" BackgroundColor="Transparent" TextColor="Red" HorizontalOptions="Start" Padding="20"/>
+            <Button Text="Удалить вопрос" BackgroundColor="Transparent" HorizontalOptions="End" Padding="20" />
+            <Button Text="←" BackgroundColor="Transparent" TextColor="LightBlue" HorizontalOptions="End" Padding="20" Clicked="BackQuestion"/>
+            <Button Text="→" BackgroundColor="Transparent" TextColor="LightBlue" HorizontalOptions="End" Padding="20" Clicked="NextQuestion" />
+        </HorizontalStackLayout>
+
+    </StackLayout>
+
+</ContentPage>
